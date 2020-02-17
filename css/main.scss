@@ -16,6 +16,8 @@ $accent-light: #8A59F1;
 $black: #121212;
 $white: #FFFFFF;
 
+$btn-dark: rgb(255, 255, 255, 8%);
+
 
 // Basic
 
@@ -178,8 +180,8 @@ select:focus, button:focus, input:focus {
     }
 
     #search {
-        background: $white;
-        color: $black;
+        background: $btn-dark;
+        color: $white;
     }
 
     #searchterm {
@@ -189,7 +191,7 @@ select:focus, button:focus, input:focus {
     }
 
     #filetype {
-        background: $white;
-        color: $black;
+        background: $btn-dark;
+        color: $white;
     }
 }
