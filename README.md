@@ -7,7 +7,7 @@
 
 <p align="center">Open Directory Search Tool</p>
 
-<p align="center"><img src="https://github.com/maximousblk/findarr/workflows/Jekyll%20site%20CI/badge.svg"></p>
+<p align="center"><img src="https://github.com/maximousblk/strixx/workflows/Jekyll%20site%20CI/badge.svg"></p>
 
 <br />
 <br />
