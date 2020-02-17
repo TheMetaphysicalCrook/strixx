@@ -36,7 +36,6 @@ html {
 
 body {
     margin: 0;
-    margin-bottom: -40px;
     font-family: 'Space Mono', monospace;
     height: 100%;
     color: $black;
@@ -72,6 +71,7 @@ select:focus, button:focus, input:focus {
 .container {
     max-width: $max-width;
     margin: auto;
+    margin-bottom: -40px;
 }
 
 .wrapper {
@@ -139,7 +139,7 @@ select:focus, button:focus, input:focus {
     margin: 18px;
     height: 40px;
     background: $sec-white;
-    border-radius: 50%;
+    border-radius: 20px;
 }
 
 
