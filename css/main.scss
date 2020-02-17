@@ -99,6 +99,7 @@ select:focus, button:focus, input:focus {
     background: $black;
     color: $white;
     border: none;
+    box-shadow: 0 0 10px #000;
 }
 
 #searchterm {
@@ -121,6 +122,7 @@ select:focus, button:focus, input:focus {
     color: $white;
     border: none;
     padding: 0 8px;
+    box-shadow: 0 0 10px #000;
 }
 
 
