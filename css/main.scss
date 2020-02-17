@@ -12,9 +12,9 @@ $max-width: 740px;
 $med-width: 600px;
 $small-width: 480px;
 
-$accent: #8A59F1;
-$fore-color: #272727;
-$back-color: #FFFFFF;
+$accent-light: #8A59F1;
+$black: #121212;
+$white: #FFFFFF;
 
 
 // Basic
@@ -31,13 +31,13 @@ body {
     margin: 0;
     font-family: 'Space Mono', monospace;
     height: 100%;
-    color: $fore-color;
-    background-color: $back-color;
+    color: $black;
+    background-color: $white;
 }
 
 a {
     text-decoration: none;
-    color: $accent;
+    color: $accent-light;
 }
 
 a:hover {
@@ -75,7 +75,7 @@ select:focus, button:focus, input:focus {
 
 #site-title {
     font-size: 38px;
-    color: $fore-color;
+    color: $black;
     display: inline-block;
 }
 
@@ -94,8 +94,8 @@ select:focus, button:focus, input:focus {
     font-family: 'Space Mono', monospace;
     text-align:center;
     border-radius: 2px;
-    background: $fore-color;
-    color: #FFFFFF;
+    background: $black;
+    color: $white;
     border: none;
 }
 
@@ -104,7 +104,7 @@ select:focus, button:focus, input:focus {
     margin: 50px auto;
     font-family: 'Space Mono', monospace;
     border: none;
-    border-bottom: 2px solid $fore-color;
+    border-bottom: 2px solid $black;
     font-size: 18px;
 }
 
@@ -115,8 +115,8 @@ select:focus, button:focus, input:focus {
     text-align:center;
     font-family: 'Space Mono', monospace;
     border-radius: 2px;
-    background: $fore-color;
-    color: #FFFFFF;
+    background: $black;
+    color: $white;
     border: none;
     padding: 0 8px;
 }
@@ -164,8 +164,8 @@ select:focus, button:focus, input:focus {
 @media (prefers-color-scheme: dark) {
 
     body {
-        color: $back-color;
-        background-color: $fore-color;
+        color: $white;
+        background-color: $black;
     }
 
     hr {
@@ -174,22 +174,22 @@ select:focus, button:focus, input:focus {
     }
 
     #site-title {
-        color: $back-color;
+        color: $white;
     }
 
     #search {
-        background: $back-color;
-        color: $fore-color;
+        background: $white;
+        color: $black;
     }
 
     #searchterm {
-        border-bottom: 2px solid $accent;
-        background: $fore-color;
-        color: $back-color;
+        border-bottom: 2px solid $accent-light;
+        background: $black;
+        color: $white;
     }
 
     #filetype {
-        background: $back-color;
-        color: $fore-color;
+        background: $white;
+        color: $black;
     }
 }
