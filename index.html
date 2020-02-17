@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<center>
+    <input placeholder="Search" id="searchterm" type="text" onkeydown="if (event.keyCode == 13) { search(); return false; }">
+    <div>
+        <select id="filetype">
+            <option value="undefined" disabled selected>File Type</option>
+            <option value=" %2B(jpg|jpeg|png|gif|tif|tiff|bmp|webp|svg)">Images</option>
+            <option value=" %2B(mp3|wav|ac3|ogg|flac|wma|m4a)">Music</option>
+            <option value=" %2B(mkv|mp4|avi|mov|mpg|wmv|webm)">Videos</option>
+            <option value=" %2B(exe|iso|tar|msi|rar|deb|zip|apk)">Software</option>
+            <option value=" %2B(mobi|cbz|cbr|cbc|chm|epub|fb2|lit|lrf|odt|pdf|prc|pdb|pml|rb|rtf|tcr|doc|docx)">Documents</option>
+            <option value=" %2B(rar|tar|zip|sit|7z|gz|tar.gz|bz2)">Archives</option>
+            <option value=" %2B(torrent)">Torrents</option>
+            <option value="">All</option>
+        </select>
+        <button id="search" onclick="search()">Search</button>
+    </div>
+</center>
+
+<script type="text/javascript">
+    function search() {
+        var searchterm = document.getElementById("searchterm").value;
+        document.getElementById("searchterm").innerHTML = searchterm;
+        var filetype = document.getElementById("filetype");
+        var filetype = filetype.options[filetype.selectedIndex].value;
+        if (filetype == "undefined") {
+            alert("Error: Select file type");
+        } else {
+            window.open("https://www.google.com/search?q=" + searchterm + filetype + " -inurl:(jsp|pl|php|html|aspx|htm|cf|shtml) intitle:index.of last%2Bmodified -inurl:(listen77|mp3raid|mp3toss|mp3drug|index_of|wallywashis)");
+        }
+    }
+</script>

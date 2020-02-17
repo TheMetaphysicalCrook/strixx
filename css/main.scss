@@ -1,0 +1,195 @@
+---
+
+---
+// Font
+
+@import url('https://fonts.googleapis.com/css?family=Space+Mono&display=swap');
+
+
+// Customization Variables
+
+$max-width: 740px;
+$med-width: 600px;
+$small-width: 480px;
+
+$accent: #8A59F1;
+$fore-color: #272727;
+$back-color: #FFFFFF;
+
+
+// Basic
+
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none; /* iOS Safari */
+}
+
+body {
+    margin: 0;
+    font-family: 'Space Mono', monospace;
+    height: 100%;
+    color: $fore-color;
+    background-color: $back-color;
+}
+
+a {
+    text-decoration: none;
+    color: $accent;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    margin: 18px 8px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+select:focus, button:focus, input:focus {
+    outline: 0;
+    outline-color: transparent;
+    outline-style: none;
+}
+
+
+// divs
+
+.container {
+    max-width: $max-width;
+    margin: auto;
+}
+
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -40px;
+}
+
+// Navbar
+
+#site-title {
+    font-size: 38px;
+    color: $fore-color;
+    display: inline-block;
+}
+
+.navbar {
+    padding: 30px 0 30px 0;
+    text-align: center;
+}
+
+
+// Search
+
+#search {
+    width: 140px;
+    height: 40px;
+    margin: 10px;
+    font-family: 'Space Mono', monospace;
+    text-align:center;
+    border-radius: 2px;
+    background: $fore-color;
+    color: #FFFFFF;
+    border: none;
+}
+
+#searchterm {
+    width: 90%;
+    margin: 50px auto;
+    font-family: 'Space Mono', monospace;
+    border: none;
+    border-bottom: 2px solid $fore-color;
+    font-size: 18px;
+}
+
+#filetype {
+    width: 140px;
+    height: 40px;
+    margin: 10px;
+    text-align:center;
+    font-family: 'Space Mono', monospace;
+    border-radius: 2px;
+    background: $fore-color;
+    color: #FFFFFF;
+    border: none;
+    padding: 0 8px;
+}
+
+
+// footer
+
+.footer{
+    text-align: center;
+    font-size: small;
+    margin: 16px 0;
+    height: 40px;
+}
+
+
+// Mobile
+
+@media (max-width: 800px) {
+    .container {
+        max-width: $med-width;
+        transition: 0.3s ease all;
+    }
+}
+
+@media (max-width: 650px) {
+    .container {
+        max-width: 83%;
+    }
+}
+
+@media (max-width: 500px) {
+    #site-title {
+        width: 100%;
+        float: none;
+    }
+}
+
+//  typography
+
+.content { line-height: 2; }
+
+
+// Dark theme
+
+@media (prefers-color-scheme: dark) {
+
+    body {
+        color: $back-color;
+        background-color: $fore-color;
+    }
+
+    hr {
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    #site-title {
+        color: $back-color;
+    }
+
+    #search {
+        background: $back-color;
+        color: $fore-color;
+    }
+
+    #searchterm {
+        border-bottom: 2px solid $accent;
+        background: $fore-color;
+        color: $back-color;
+    }
+
+    #filetype {
+        background: $back-color;
+        color: $fore-color;
+    }
+}

@@ -1,0 +1,68 @@
+<head>
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+    <meta charset="utf-8">
+    <link rel="manifest" href="manifest.json">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="{{ site.author }}, {{ site.title }}">
+    <meta name="author" content="{{ site.author }}">
+
+    {% if page.url == "/404.html" %}
+        <meta http-equiv="refresh" content="5; url={{ site.baseurl }}">
+    {% endif %}
+
+    {% if page.snippet %}
+        {% assign desc = page.snippet %}
+    {% else %}
+        {% assign desc = site.tagline %}
+    {% endif %}
+
+    {% if page.title %}
+        {% assign title = page.title %}
+    {% else %}
+        {% assign title = site.title %}
+    {% endif %}
+
+    <meta name="description" content="{{ desc }}">
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="icon" type="image/ico" href="assets/{{site.favicon}}">
+    <link rel="shortcut-icon" type="image/ico" href="assets/{{site.favicon}}">
+
+    <!-- For Facebook -->
+    <meta property="og:title" content="{{ title }}" />
+    <meta property="og:image" content="assets/{{site.favicon}}" />
+    <meta property="og:description" content="{{ desc }}" />
+
+    <!-- For Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="{{ title }}" />
+    <meta name="twitter:description" content="{{ desc }}" />
+    <meta name="twitter:image" content="assets/{{site.favicon}}" />
+
+    {% if site.google_analytics %}
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', '{{ site.google_analytics }}');
+        </script>
+
+        <!-- End Global site tag (gtag.js) - Google Analytics -->
+
+    {% endif %}
+
+    {% seo %}
+
+</head>

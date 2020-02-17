@@ -1,0 +1,24 @@
+lang: en_US
+title: Findarr
+author: Maximous Black
+tagline: Open Directory Search Tool
+description: Search google for any type of file you want
+
+url: "https://maximousblk.github.io"
+baseurl: "/findarr"
+
+google_site_verification: 5jYtdwLS7gzPX2uag2JzUft_UtX5n54z-egEeUkftdg
+google_analytics: UA-131672698-3
+
+footer_url: "https://github.com/maximousblk/findarr/"
+footer_text: " Fork on GitHub"
+
+logo: logo.svg
+favicon: favicon.ico
+
+sass:
+    style: compressed
+    sass_dir: css
+
+plugins:
+ - jekyll-seo-tag
