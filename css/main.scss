@@ -12,9 +12,12 @@ $max-width: 740px;
 $med-width: 600px;
 $small-width: 480px;
 
-$accent-light: #8A59F1;
+$accent: #8A59F1;
 $black: #121212;
 $white: #FFFFFF;
+
+$sec-white: #FAFAFA;
+$sec-black: #272727;
 
 $btn-dark: #272727;
 $btn-white: #FFFFFF;
@@ -41,7 +44,10 @@ body {
 
 a {
     text-decoration: none;
-    color: $accent-light;
+    color: $accent;
+    background: $sec-white;
+    border-radius: 50%;
+    padding: 8px;
 }
 
 a:hover {
@@ -174,6 +180,11 @@ select:focus, button:focus, input:focus {
         background-color: $black;
     }
 
+    a {
+        color: $accent;
+        background: $sec-black;
+    }
+
     hr {
         border-top: 1px solid rgba(255, 255, 255, 0.3);
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -190,7 +201,7 @@ select:focus, button:focus, input:focus {
     }
 
     #searchterm {
-        border-bottom: 2px solid $accent-light;
+        border-bottom: 2px solid $white;
         background: $black;
         color: $white;
     }
