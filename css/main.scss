@@ -71,7 +71,6 @@ select:focus, button:focus, input:focus {
 .container {
     max-width: $max-width;
     margin: auto;
-    margin-bottom: -40px;
 }
 
 .wrapper {
@@ -136,8 +135,7 @@ select:focus, button:focus, input:focus {
 .footer{
     text-align: center;
     font-size: small;
-    margin: 18px;
-    height: 40px;
+    padding: 10px;
     background: $sec-white;
     border-radius: 20px;
 }
