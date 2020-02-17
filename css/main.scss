@@ -16,8 +16,8 @@ $accent-light: #8A59F1;
 $black: #121212;
 $white: #FFFFFF;
 
-$btn-dark: rgba(255, 255, 255, 12%);
-$btn-white: rgba(0, 0, 0, 1%);
+$btn-dark: #272727;
+$btn-white: #F6F6F6;
 
 
 
@@ -101,7 +101,7 @@ select:focus, button:focus, input:focus {
     background: $btn-white;
     color: $black;
     border: none;
-    box-shadow: 0 0 10px #eee;
+    box-shadow: 0 0 10px #ddd;
 }
 
 #searchterm {
@@ -124,7 +124,7 @@ select:focus, button:focus, input:focus {
     color: $black;
     border: none;
     padding: 0 8px;
-    box-shadow: 0 0 10px #eee;
+    box-shadow: 0 0 10px #ddd;
 }
 
 
