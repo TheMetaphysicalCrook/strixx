@@ -3,7 +3,7 @@
 
 <p align="center"><a href="https://maximousblk.github.io/findarr/"><img width=50 height=50 src="/assets/logo.svg"></a></p>
 
-<h1 align="center">Findarr</h1>
+<h1 align="center">Strixx</h1>
 
 <p align="center">Open Directory Search Tool</p>
 
@@ -19,12 +19,7 @@
 
 <!-- [![X][X]](X) -->
 
-Findarr is open directory search tool.
-
-
-### GETTING STARTED
-
-To write a new blog post, follow these simple steps.
+Strixx is open directory search tool.
 
 
 ### ROADMAP
