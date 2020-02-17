@@ -1,7 +1,7 @@
 <br />
 <br />
 
-<p align="center"><a href="https://maximousblk.github.io/findarr/"><img width=50 height=50 src="/assets/logo.svg"></a></p>
+<p align="center"><a href="https://maximousblk.github.io/strixx/"><img width=50 height=50 src="/assets/logo.svg"></a></p>
 
 <h1 align="center">Strixx</h1>
 
@@ -24,7 +24,7 @@ Strixx is open directory search tool.
 
 ### ROADMAP
 
-See the [open issues](https://github.com/maximousblk/findarr/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/maximousblk/strixx/issues) for a list of proposed features (and known issues).
 
 
 ### CONTRIBUTION
