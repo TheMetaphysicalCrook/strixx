@@ -101,7 +101,7 @@ select:focus, button:focus, input:focus {
     background: $btn-white;
     color: $black;
     border: none;
-    box-shadow: 0 0 10px #ddd;
+    box-shadow: 0 3px 10px #ddd;
 }
 
 #searchterm {
@@ -124,7 +124,7 @@ select:focus, button:focus, input:focus {
     color: $black;
     border: none;
     padding: 0 8px;
-    box-shadow: 0 0 10px #ddd;
+    box-shadow: 0 3px 10px #ddd;
 }
 
 
@@ -186,7 +186,7 @@ select:focus, button:focus, input:focus {
     #search {
         background: $btn-dark;
         color: $white;
-        box-shadow: 0 0 10px #000;
+        box-shadow: 0 3px 10px #000;
     }
 
     #searchterm {
@@ -198,6 +198,6 @@ select:focus, button:focus, input:focus {
     #filetype {
         background: $btn-dark;
         color: $white;
-        box-shadow: 0 0 10px #000;
+        box-shadow: 0 3px 10px #000;
     }
 }
