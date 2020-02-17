@@ -9,12 +9,11 @@ if ("serviceWorker" in navigator) {
   } else {
     // Register the service worker
     navigator.serviceWorker
-      .register("https://maximousblk.github.io/findarr/sw.js", {
-        scope: "https://maximousblk.github.io/findarr/"
+      .register("https://maximousblk.github.io/strixx/sw.js", {
+        scope: "https://maximousblk.github.io/strixx/"
       })
       .then(function (reg) {
         console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
       });
   }
 }
-
