@@ -16,7 +16,7 @@ $accent: #8A59F1;
 $black: #121212;
 $white: #FFFFFF;
 
-$sec-white: #FAFAFA;
+$sec-white: #F8F8F8;
 $sec-black: #272727;
 
 $btn-dark: #272727;
@@ -133,6 +133,7 @@ select:focus, button:focus, input:focus {
 // footer
 
 .footer{
+    margin: 16px;
     text-align: center;
     font-size: small;
     padding: 10px;
@@ -177,8 +178,7 @@ select:focus, button:focus, input:focus {
         background-color: $black;
     }
 
-    a {
-        color: $accent;
+    .footer{
         background: $sec-black;
     }
 
