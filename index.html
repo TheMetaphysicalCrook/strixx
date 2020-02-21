@@ -3,7 +3,7 @@ layout: default
 ---
 
 <center>
-    <input placeholder="Search" id="searchterm" type="text" onkeydown="if (event.keyCode == 13) { search(); return false; }">
+    <input placeholder="Search" id="searchterm" type="text" autocomplete="off" onkeydown="if (event.keyCode == 13) { search(); return false; }">
     <div>
         <select id="filetype">
             <option value="undefined" disabled selected>File Type</option>
