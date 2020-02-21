@@ -1,10 +1,6 @@
 ---
 
 ---
-// Font
-
-@import url('https://fonts.googleapis.com/css?family=Space+Mono&display=swap');
-
 
 // Customization Variables
 
@@ -38,7 +34,7 @@ html {
 
 body {
     margin: 0;
-    font-family: 'Space Mono', monospace;
+    font-family: "Roboto", Arial;
     height: 100%;
     color: $black;
     background-color: $white;
@@ -99,7 +95,7 @@ select:focus, button:focus, input:focus {
     width: 140px;
     height: 40px;
     margin: 10px;
-    font-family: 'Space Mono', monospace;
+    font-family: "Roboto", Arial;
     text-align:center;
     border-radius: 5px;
     background: $btn-white;
@@ -111,7 +107,7 @@ select:focus, button:focus, input:focus {
 #searchterm {
     width: 90%;
     margin: 50px auto;
-    font-family: 'Space Mono', monospace;
+    font-family: "Roboto", Arial;
     border: none;
     border-bottom: 2px solid $black;
     font-size: 18px;
@@ -122,7 +118,7 @@ select:focus, button:focus, input:focus {
     height: 40px;
     margin: 10px;
     text-align:center;
-    font-family: 'Space Mono', monospace;
+    font-family: "Roboto", Arial;
     border-radius: 5px;
     background: $btn-white;
     color: $black;
@@ -135,7 +131,7 @@ select:focus, button:focus, input:focus {
 // footer
 
 .footer{
-    margin: 36px;
+    margin: 36px auto;
     max-width: $small-width;
     text-align: center;
     font-size: small;
