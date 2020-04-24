@@ -19,6 +19,3 @@ favicon: favicon.ico
 sass:
     style: compressed
     sass_dir: css
-
-plugins:
- - jekyll-seo-tag
